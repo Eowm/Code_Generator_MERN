@@ -18,7 +18,7 @@ export function editPost(cuid, post) {
 
 export function editPostRequest(cuid, post) {
   return (dispatch) => {
-    return callApi('posts/${cuid}', 'put', {
+    return callApi(`posts/${cuid}`, 'put', {
       post: {
         name: post.name,
         title: post.title,
