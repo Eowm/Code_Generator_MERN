@@ -6,6 +6,9 @@ export const ADD_POSTS = 'ADD_POSTS';
 export const DELETE_POST = 'DELETE_POST';
 export const EDIT_POST = 'EDIT_POST';
 
+export const THUMB_UP_POST = 'THUMB_UP_POST';
+export const THUMB_DOWN_POST = 'THUMB_DOWN_POST';
+
 // Export Actions
 
 export function editPost(cuid, post) {
@@ -81,3 +84,4 @@ export function deletePostRequest(cuid) {
     return callApi(`posts/${cuid}`, 'delete').then(() => dispatch(deletePost(cuid)));
   };
 }
+
